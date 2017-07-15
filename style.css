@@ -1,0 +1,135 @@
+html{
+	margin:0px;}
+
+body{
+	background: #333 ;
+}	
+
+.sistema {
+	width: 600px;
+    height: 600px;
+    position: absolute;
+    border: 0px solid #fbfbfb;
+    background: radial-gradient(#030425 20%,#010413 40%);
+    top: 50%;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -300px;
+	overflow:hidden;
+}
+
+.orbita{
+    width: 400px;
+    height: 400px;
+    border: 1px dashed #fff;
+    border-radius: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+    /*transiciones*/
+    transition: transform 500s linear;
+}
+
+.orbita1{
+    width: 250px;
+    height: 250px;
+    border: 1px dashed #fff;
+    border-radius: 100%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-left: -125px;
+    margin-top: -125px;
+    transition: transform 300s linear;
+}
+
+.tierra{
+    background: url(https://cdn.pixabay.com/photo/2017/02/23/13/34/earth-2092185_960_720.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    top: 50px;
+    border-radius: 50%;
+    transition: transform 500s linear;
+    position: absolute;
+}
+
+.sol{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background:url("https://lh6.googleusercontent.com/Kkvfqa8QR5i8xjbty29Po7gLBh6jBKMmB1o8n9HF7Vw=w206-h205-p-no");
+    background-size:cover;
+    border-radius: 50%;
+    top: 50%;
+    margin-top: -75px;
+    left: 50%;
+    margin-left: -75px;
+}	
+
+.luna{
+	width: 45px;
+    height: 45px;
+    background: url("http://www.pngmart.com/files/4/Moon-PNG-Image.png");
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 5px;
+    background-size: cover;
+}
+
+.estrella1{
+	float: left;
+    background: #fff;
+    width: 2px;
+    height: 2px;
+    margin: 7%;
+	box-shadow: 0px 0px 5px 1px rgba(255,255,255,0);
+	transition: box-shadow 15s linear;
+}
+
+.estrella2{
+	float: left;
+    background: #fff;
+    width: 2px;
+    height: 2px;
+    margin: 14%;
+	box-shadow: 0px 0px 5px 1px rgba(255,255,255,0);
+	transition: box-shadow 5s linear;
+}
+.asteroide{
+	position: absolute;
+    top: 50px;
+    left: -53px;
+    height: 4px;
+    width: 46px;
+    box-shadow: 9px 0px 13px 1px rgb(255, 154, 29);
+    background: linear-gradient(to right,rgba(255, 0, 0, 0),rgba(255, 141, 0, 0.65));
+    border-radius: 50%;
+    transition: transform 3s linear;
+    transition-delay:3s;
+}
+
+
+/*Transiciones*/
+.sistema:hover .orbita{
+	transform:rotate(20000deg);
+}
+
+.sistema:hover .orbita1{
+	transform:rotate(20000deg);
+}
+
+.sistema:hover .tierra{
+	transform:rotate(20000deg);
+}
+
+.sistema:hover .estrella2, .sistema:hover .estrella1{
+	box-shadow: 0px 0px 5px 1px rgba(255,255,255,1);
+}
+
+.sistema:hover .asteroide{
+	transform: translate(680px,0px);
+}
